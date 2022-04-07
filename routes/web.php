@@ -28,9 +28,6 @@ use App\Http\Controllers\FormborrowController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/formuser', function () {
-    return view('user.form.index');
-});
 // Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 
@@ -112,7 +109,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function() {
     Route::get('/defective/edit/{id}', [DefectiveController::class, 'edit']);
     Route::post('/defective/update/{id}', [DefectiveController::class, 'update']);
 
-    //
-    Route::get('/formuser', [FormborrowController::class, 'index']);
+    //form borrow
+    Route::get('/formuser', [FormborrowController::class, 'index'])->name('user');
 
 });

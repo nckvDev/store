@@ -1,0 +1,55 @@
+.container {
+    border: 2px groove black;
+    padding: 2%;
+    margin: auto;
+}
+
+.formName {
+    margin-bottom: 10px;
+    width: auto;
+}
+
+.formOrder {
+    margin-bottom: 10px;
+    width: auto;
+    display: flex;
+
+}
+
+.date {
+    margin-bottom: 10px;
+}
+
+.form-row {
+    margin: auto;
+}
+
+h3 {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .titleForm {
+        font-size: 23px;
+    }
+
+    .titleName {
+        font-size: 15px;
+    }
+
+    .titleOrder {
+        font-size: 15px;
+    }
+
+    .date {
+        width: 50%;
+    }
+
+    .formOrder {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
